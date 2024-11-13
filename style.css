@@ -192,6 +192,25 @@ header {
   }
 }
 
+/* style.css */
+body {
+  background-image: url('foto/sdlogo.png'); /* Ganti dengan path gambar yang diinginkan */
+  background-size: cover; /* Ukuran gambar agar sesuai dengan layar */
+  background-position: center; /* Memposisikan gambar di tengah */
+  background-repeat: no-repeat; /* Agar gambar tidak berulang */
+  background-attachment: fixed; /* Agar gambar tetap saat di-scroll */
+  color: white; /* Untuk warna teks agar lebih terbaca di atas latar belakang */
+  animation: moveBackgroundVertical 10s linear infinite; /* Animasi 10 detik, linear, berulang tanpa henti */
+}
 
+@keyframes moveBackgroundVertical {
+  0% {
+      background-position: center top; /* Mulai dari atas */
+  }
+  100% {
+      background-position: center bottom; /* Bergerak ke bawah */
+  }
+}
+  
 
 
