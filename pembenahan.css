@@ -1,0 +1,89 @@
+/* Styling dasar untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Styling untuk file-item */
+.file-item {
+    display: flex;
+    justify-content: center; /* Menyusun konten di tengah */
+    align-items: center;
+    margin-top: 50px; /* Memberikan jarak dari bagian atas */
+    padding: 20px;
+}
+
+/* Styling untuk tombol Kembali */
+.open-btn {
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    padding: 12px 25px; /* Padding tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    border-radius: 8px; /* Sudut tombol membulat */
+    font-size: 16px; /* Ukuran font */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus di bawah tombol */
+    transition: all 0.3s ease; /* Efek transisi untuk perubahan warna dan transformasi */
+}
+
+/* Efek ketika tombol dihover */
+.open-btn:hover {
+    background-color: #45a049; /* Ubah warna latar belakang saat hover */
+    transform: translateY(-4px); /* Efek mengangkat tombol sedikit */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan yang lebih kuat saat hover */
+}
+
+/* Efek saat tombol diklik */
+.open-btn:active {
+    transform: translateY(2px); /* Menekan tombol sedikit ketika diklik */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lebih ringan saat tombol diklik */
+}
